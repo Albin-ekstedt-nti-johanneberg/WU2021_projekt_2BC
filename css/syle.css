@@ -9,7 +9,7 @@
 
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: 20% 20% 50% 10%;
     grid-template-areas:
     'he he'
@@ -60,7 +60,7 @@
 
 .a4 {
     grid-area: a4;
-
+    background-color: rgba(74, 22, 109, 0.452)
 }
 
 .a5 {
@@ -72,10 +72,7 @@
     grid-area: s1;
     display: grid;
 
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 20%;
-    grid-template-rows: 5% 5% 5% 5% 5%;
+
     grid-template-areas:
     'a1'
     'a2'
