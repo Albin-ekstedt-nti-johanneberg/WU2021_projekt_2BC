@@ -9,12 +9,12 @@
 
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 20% 20% 50% 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 30% 50% 10%;
     grid-template-areas:
-    'he he'
-    's1 d1'
-    's1 m1'
+    'he s1'
+    'd1 d1'
+    'm1 m1'
     'fo fo'
     ;
 
@@ -23,7 +23,9 @@
 .header {
     grid-area: he;
     background-color: green;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .div1 {
@@ -39,33 +41,34 @@
 
 .footer {
     grid-area: fo;
+    background-color: grey;
 }
 
 .a1 {
     grid-area: a1;
-    background-color: indianred;
+    background-color: green;
 
 }
 
 .a2 {
     grid-area: a2;
-    background-color: indianred;
+    background-color: green;
 
 }
 
 .a3 {
     grid-area: a3;
-
+    background-color: green;
 }
 
 .a4 {
     grid-area: a4;
-    background-color: rgba(74, 22, 109, 0.452)
+    background-color: green;
 }
 
 .a5 {
     grid-area: a5;
-
+    background-color: green;
 }
 
 .nav {
@@ -74,11 +77,28 @@
 
 
     grid-template-areas:
-    'a1'
-    'a2'
-    'a3'
-    'a4'
-    'a5'
-    
+    'a1 a2 a3 a4 a5'
     ;
+    
 }
+
+.show{
+    left: 0;
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .main {
+        display: none
+    }
+
+    .menu_button {
+        cursor: pointer;
+        display: block
+    }
+
+
+}
+
