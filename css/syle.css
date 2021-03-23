@@ -17,6 +17,7 @@
     'm1 m1'
     'fo fo'
     ;
+    
 
 }
 
@@ -102,3 +103,52 @@
 
 }
 
+.body2 {
+    display: grid;
+
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 30% 50% 10%;
+    grid-template-areas:
+    'he s1'
+    'wr wr'
+    'm1 m1'
+    'fo fo'
+    ;
+
+}
+
+.wrapper {
+    grid-area: wr;
+    display: grid;
+
+    grid-template-areas: 
+    'r1 r2'
+    'r3 r4'
+
+    ;
+}
+
+.d1 {
+    grid-area: r1;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+}
+
+.d2 {
+    grid-area: r2;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+
+}
+
+.d3 {
+    grid-area: r3;
+}
