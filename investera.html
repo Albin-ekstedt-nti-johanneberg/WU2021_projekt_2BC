@@ -4,26 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekstedt Invest</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/syle.css">
 </head>
-<body class="body">
+<body class="body2">
+<div class="fade-layer"></div>
 
 
 <header class="header">
+    <div class="menu-button">
+        <i class="material-icons">menu</i>
+    </div>
+    <a href="index.html"><img class="logga" src="img/Logga.png" alt=""></a>
 <h1>Ekstedt Invest</h1>   
 </header>
 <nav class="nav">
-    <a href="investera.html" class="a1">Investera</a>
-    <a href="börs-värde.html" class="a2">Börs-värde</a>
-    <a href="omdömen.html" class="a3">Omdömen/recensioner </a>
-    <a href="" class="a4">Annat</a>
+    <a href="investera.html" class="a2">Investera</a>
+    <a href="börs-värde.html" class="a3">Börs-värde</a>
+    <a href="omdömen.html" class="a4">Omdömen/recensioner </a>
+    
     <a href="om-oss.html" class="a5">Om oss</a>
+    <script src="js/main.js"></script>
 </nav>
     
 
-<div class="div1"><h2>Välkommen till Ekstedt Invest</h2></div>
-<main class="main"><h4>Vår passion är att bli det säkraste investmentbolaget i Sverige!</h4></main>
-<footer class="footer"> <a href="index.html">Länk längst upp på sidan</a><br><br>   MADE BY Albin Ekstedt</footer>
+<div class="register">
+<form action="action_page.php">
+    <div class="container">
+      <h1>Investera:</h1>
+      <p>Vill du investera hos oss? Skriv in din information så kontaktar vi dig!</p>
+      <hr>
+  
+      <label for="email"><b>Email:</b></label>
+      <input type="text" placeholder="Email..." name="email" id="email" required>
+  
+      <label for="psw"><b>Summa pengar:</b></label>
+      <input type="text" placeholder="Summa..." name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Någon annan viktig information du vill skriva:</b></label>
+      <input type="text" placeholder="Text..." name="psw-repeat" id="psw-repeat" required>
+      <hr>
+  
+      <p>Om du skriver ett avtal med oss så gäller: <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="registerbtn">Registrera dig</button>
+    </div>
 
+  </form>
+</div>
+<footer class="footer"> <a href="index.html">Länk längst upp på sidan</a><br><br>   MADE BY Albin Ekstedt</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
